@@ -192,6 +192,16 @@ body { background: var(--white); }
   color: var(--black-coral);
   font-size: var(--fs-5);
 }
+
+.navbar {
+  background-color: #f8f8f8; 
+  padding: 15px 0;
+}
+
+.logo img {
+  max-width: 80px; 
+}
+
 /*-----------------------------------*\
  * #HEADER
 \*-----------------------------------*/

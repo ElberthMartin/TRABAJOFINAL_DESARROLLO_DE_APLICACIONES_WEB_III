@@ -40,7 +40,8 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"><div class="logo">
-        <img src="img/logo.png" alt="Logo de tu empresa">
+      <img src="{{ asset('img/log.png') }}" alt="Logo de tu empresa">
+
       </div></a>
       
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -157,131 +158,130 @@
       <!-- 
         - #POPULAR
       -->
-
       <section class="popular" id="destination">
-        <div class="container">
+  <div class="container">
 
-          <p class="section-subtitle">Uncover place</p>
+    <p class="section-subtitle">Descubre Huánuco</p>
 
-          <h2 class="h2 section-title">Popular destination</h2>
+    <h2 class="h2 section-title">Destinos Populares</h2>
 
-          <p class="section-text">
-            Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque laudantium.
-            Sit ornare
-            mollitia tenetur, aptent.
-          </p>
+    <p class="section-text">
+      Conoce los lugares turísticos más destacados de Huánuco, Perú. Descubre su belleza natural y cultural.
+    </p>
 
-          <ul class="popular-list">
+    <ul class="popular-list">
 
-            <li>
-              <div class="popular-card">
+      <li>
+        <div class="popular-card">
 
-                <figure class="card-img">
-                  <img src="./assets/images/popular-1.jpg" alt="San miguel, italy" loading="lazy">
-                </figure>
+          <figure class="card-img">
+            <img src="{{ asset('img/popular-1.jpg') }}" alt="Pichgacocha, Huánuco" loading="lazy">
+          </figure>
 
-                <div class="card-content">
+          <div class="card-content">
 
-                  <div class="card-rating">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
+            <div class="card-rating">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div>
 
-                  <p class="card-subtitle">
-                    <a href="#">Italy</a>
-                  </p>
+            <p class="card-subtitle">
+              <a href="#">Huánuco, Perú</a>
+            </p>
 
-                  <h3 class="h3 card-title">
-                    <a href="#">San miguel</a>
-                  </h3>
+            <h3 class="h3 card-title">
+              <a href="#">Pichgacocha</a>
+            </h3>
 
-                  <p class="card-text">
-                    Fusce hic augue velit wisi ips quibusdam pariatur, iusto.
-                  </p>
+            <p class="card-text">
+              Pichgacocha es un hermoso lago en Huánuco, rodeado de naturaleza exuberante y paisajes impresionantes.
+              Ideal para la pesca y el ecoturismo.
+            </p>
 
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="popular-card">
-
-                <figure class="card-img">
-                  <img src="./assets/images/popular-2.jpg" alt="Burj khalifa, dubai" loading="lazy">
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="card-rating">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-
-                  <p class="card-subtitle">
-                    <a href="#">Dubai</a>
-                  </p>
-
-                  <h3 class="h3 card-title">
-                    <a href="#">Burj khalifa</a>
-                  </h3>
-
-                  <p class="card-text">
-                    Fusce hic augue velit wisi ips quibusdam pariatur, iusto.
-                  </p>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="popular-card">
-
-                <figure class="card-img">
-                <img src="{{ asset('img/popular-3.jpg') }}" alt="Descripción de la imagen" loading="lazy">
-
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="card-rating">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-
-                  <p class="card-subtitle">
-                    <a href="#">Japan</a>
-                  </p>
-
-                  <h3 class="h3 card-title">
-                    <a href="#">Kyoto temple</a>
-                  </h3>
-
-                  <p class="card-text">
-                    Fusce hic augue velit wisi ips quibusdam pariatur, iusto.
-                  </p>
-
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-          <button class="btn btn-primary">More destintion</button>
+          </div>
 
         </div>
-      </section>
+      </li>
+
+      <li>
+        <div class="popular-card">
+
+          <figure class="card-img">
+            <img src="{{ asset('img/huanuco-cueva-lechuzas.jpg') }}" alt="Cueva de las Lechuzas, Huánuco" loading="lazy">
+          </figure>
+
+          <div class="card-content">
+
+            <div class="card-rating">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div>
+
+            <p class="card-subtitle">
+              <a href="#">Huánuco, Perú</a>
+            </p>
+
+            <h3 class="h3 card-title">
+              <a href="#">Cueva de las Lechuzas</a>
+            </h3>
+
+            <p class="card-text">
+              La Cueva de las Lechuzas es una maravilla natural en Huánuco. Hogar de miles de lechuzas,
+              ofrece una experiencia única de observación de aves.
+            </p>
+
+          </div>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="popular-card">
+
+          <figure class="card-img">
+            <img src="{{ asset('img/huanuco-corona-inca.jpg') }}" alt="Corona del Inca, Huánuco" loading="lazy">
+          </figure>
+
+          <div class="card-content">
+
+            <div class="card-rating">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div>
+
+            <p class="card-subtitle">
+              <a href="#">Huánuco, Perú</a>
+            </p>
+
+            <h3 class="h3 card-title">
+              <a href="#">Corona del Inca</a>
+            </h3>
+
+            <p class="card-text">
+              La Corona del Inca es un sitio arqueológico en Huánuco, Perú, que ofrece una vista impresionante
+              de la región montañosa y la historia de los incas.
+            </p>
+
+          </div>
+
+        </div>
+      </li>
+
+    </ul>
+
+    <button class="btn btn-primary">Más destinos</button>
+
+  </div>
+</section>
 
 
 
