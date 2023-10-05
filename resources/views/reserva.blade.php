@@ -1,64 +1,80 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reserva en Huánuco, Perú</title>
-    <!-- Agrega tus enlaces a hojas de estilo CSS aquí -->
-</head>
-<body>
-    <header>
-    <div id="container" class="row">
-  <h1>Travel WebApp</h1>
-  <p>Inspirado en el diseño de <a href="http://dribbble.com/MonikaMajkowska">Monika Majkowska</a>, haz clic <a href="http://dribbble.com/shots/1208466-Safari/attachments/161078">aquí</a> para ver la imagen original.</p>
-  <div id="booking" class="widget large-12 small-11 small-centered columns">
-    <div id="imagePreview" class="large-7 small-12 columns">
-      <h1>4 días de safari en Huánuco, Perú</h1>
-      <h3>Parque Nacional Serengeti</h3>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  
+  <link rel="stylesheet" href="{{ asset('css/reserva.css') }}">
+    
+    
+    <title>Bienvenido a mi Formulario</title>
+
+</head >
+
+<body style="background-image: url('{{ asset('img/3.jpg') }}');">>
+    <div class="container-form sign-up">
+        <div class="welcome-back">
+            <div class="message">
+                <h2>Bienvenido a DaniCodex</h2>
+                <p>Si ya tienes una cuenta por favor inicia sesion aqui</p>
+                <button class="sign-up-btn">Iniciar Sesion</button>
+            </div>
+        </div>
+        <form class="formulario">
+            <h2 class="create-account">Crear una cuenta</h2>
+            <div class="iconos">
+                <div class="border-icon">
+                    <i class='bx bxl-instagram'></i>
+                </div>
+                <div class="border-icon">
+                    <i class='bx bxl-linkedin' ></i>
+                </div>
+                <div class="border-icon">
+                    <i class='bx bxl-facebook-circle' ></i>
+                </div>
+            </div>
+            <p class="cuenta-gratis">Crear una cuenta gratis</p>
+            <input type="text" placeholder="Nombre">
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Contraseña">
+            <input type="button" value="Registrarse">
+        </form>
     </div>
-    <div id="menu" class="large-5 columns">
-      <h3>Reserva de campamento en Huánuco, Perú</h3>
-      <form action="#" class="small-12 small-centered columns">
-        <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" />
-        <label for="apellido">Apellido</label>
-        <input type="text" id="apellido" />
-        <label for="correo">Correo Electrónico</label>
-        <input type="email" id="correo" />
-        <label for="fechaLlegada">Fecha de llegada</label>
-        <input type="date" id="fechaLlegada" />
-        <label for="fechaRegreso">Fecha de regreso</label>
-        <input type="date" id="fechaRegreso"/>
-        <input type="checkbox" id="sinFecha"/>
-        <label for="sinFecha">Aún no tengo fechas específicas</label>
-        <label for="escogeCamp">Escoge tu campamento</label>
-        <select id="escogeCamp">
-          <option value="campamentoNo1">Zona de camping No. 01</option>
-          <option value="campamentoNo2">Zona de camping No. 02</option>
-          <option value="campamentoNo3">Zona de camping No. 03</option>
-          <option value="campamentoNo4">Zona de camping No. 04</option>
-          <option value="campamentoNo5">Zona de camping No. 05</option>
-        </select>
-        <label>¿Quiénes irán?</label>
-        <select id="adultosInvitados" class="small-5 columns">
-          <option value="1">1 Adulto</option>
-          <option value="2">2 Adultos</option>
-          <option value="3">3 Adultos</option>
-          <option value="4">4 Adultos</option>
-          <option value="5">5 Adultos</option>
-        </select>
-        <select id="niñosInvitados" class="small-5 small-offset-2 columns">
-          <option value="1">1 Niño</option>
-          <option value="2">2 Niños</option>
-          <option value="3">3 Niños</option>
-          <option value="4">4 Niños</option>
-          <option value="5">5 Niños</option>
-        </select>
-        <input type="button" value="Haz mi reserva"/>
-      </form>
+    <div class="container-form sign-in">
+        <form class="formulario">
+            <h2 class="create-account">Iniciar Sesion</h2>
+            <div class="iconos">
+                <div class="border-icon">
+                    <i class='bx bxl-instagram'></i>
+                </div>
+                <div class="border-icon">
+                    <i class='bx bxl-linkedin' ></i>
+                </div>
+                <div class="border-icon">
+                    <i class='bx bxl-facebook-circle' ></i>
+                </div>
+            </div>
+            <p class="cuenta-gratis">¿Aun no tienes una cuenta?</p>
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Contraseña">
+            <input type="button" value="Iniciar Sesion">
+        </form>
+        <div class="welcome-back">
+            <div class="message">
+                <h2>Bienvenido de nuevo</h2>
+                <p>Si aun no tienes una cuenta por favor registrese aqui</p>
+                <button class="sign-in-btn">Registrarse</button>
+            </div>
+        </div>
     </div>
-  </div>
-  <p>Todavía estoy trabajando en ello; hay algunos problemas con los que todavía no sé cómo lidiar.</p>
-</div>
+    <script src="script.js"></script>
 </body>
+
 </html>
