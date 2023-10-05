@@ -291,43 +291,6 @@ body { background: var(--white); }
   z-index: 3;
 }
 
-.navbar.active {
-  right: 0;
-  visibility: visible;
-  pointer-events: all;
-  transition: 0.25s ease-out;
-}
-
-.navbar-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 40px 15px;
-}
-
-.navbar-top .logo img { width: 150px; }
-
-.nav-close-btn {
-  font-size: 20px;
-  color: var(--bright-navy-blue);
-}
-
-.nav-close-btn ion-icon { --ionicon-stroke-width: 80px; }
-
-.navbar-list { border-top: 1px solid hsla(0, 0%, 0%, 0.1); }
-
-.navbar-list li { border-bottom: 1px solid hsla(0, 0%, 0%, 0.1); }
-
-.navbar-link {
-  padding: 15px 20px;
-  color: var(--jet);
-  font-weight: var(--fw-500);
-  font-size: var(--fs-4);
-  transition: var(--transition);
-  text-transform: capitalize;
-}
-
-.navbar-link:is(:hover, :focus) { color: var(--bright-navy-blue); }
 
 .overlay {
   position: fixed;
@@ -345,15 +308,39 @@ body { background: var(--white); }
 }
 
 
+/* Aplica estos estilos en tu hoja de estilo CSS personalizada */
 
+.navbar {
+  background: linear-gradient(45deg, #070c65, #0d215f, #3385ff);
+  background-size: 200% 200%;
+  animation: gradientAnimation 10s ease infinite;
+  color: rgb(255, 0, 0);
+  padding: 20px 0;
+}
 
+.navbar a.nav-link {
+  font-size: 20px; /* Cambia el tamaño del texto a 20px */
+  color: white !important; /* Cambia el color del texto a blanco (usamos !important para priorizarlo) */
+}
 
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 /*-----------------------------------*\
  * #HERO
 \*-----------------------------------*/
 
 .hero {
-  background-image: url("../images/hero-banner.jpg");
+  background-image: url("{{ asset('img/hero-banner.jpg') }}");
+ 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

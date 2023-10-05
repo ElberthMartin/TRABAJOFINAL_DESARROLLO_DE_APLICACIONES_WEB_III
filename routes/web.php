@@ -18,9 +18,9 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/portafolio', function () {
-    return view('portafolio');
-})->name('portafolio') ;
+Route::get('/admin', function () {
+    return view('admin');
+})->name('admin') ;
 
 Route::get('/reserva', function () {
     return view('reserva');

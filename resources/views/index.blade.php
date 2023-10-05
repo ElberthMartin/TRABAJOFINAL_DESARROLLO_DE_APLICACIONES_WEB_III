@@ -52,16 +52,16 @@
             <a class="nav-link active" aria-current="page" href="#">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{route('portafolio')}}">Reserva</a>
+            <a class="nav-link" href="/reserva">Reserva</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Productos
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> portafolio
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Inicio</a></li>
-              <li><a class="dropdown-item" href="#">Productos seguridad</a></li>
+              <li><a class="dropdown-item" href="{{route('admin')}}">admin</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">licencias</a></li>
+              <li><a class="dropdown-item" href="#">contactenos</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -78,39 +78,6 @@
     - #HEADER
   -->
 
-  <header class="header" data-header>
-
-    <div class="overlay" data-overlay></div>
-
-    <div class="header-top">
-      <div class="container">
-
-      
-
-        
-
-        </div>
-
-      </div>
-    </div>
-
-    <div class="header-bottom">
-      <div class="container">
-
-        <ul class="social-list">
-
-          
-           
-       
-
-        
-
-        <button class="btn btn-primary">Book Now</button>
-
-      </div>
-    </div>
-
-  </header>
 
 
 
@@ -123,25 +90,20 @@
         - #HERO
       -->
 
-      <section class="hero" id="home">
-        <div class="container">
+      <section class="hero" id="home" style="background-image: url('{{ asset('img/hero-banner.jpg') }}');">
+  <div class="container">
+    <h2 class="h1 hero-title">Descubre los lugares turisticos de Huánuco, Perú</h2>
+    <p class="hero-text">
+      Huánuco, un lugar de belleza natural y cultura rica. ¿Estás listo para explorar lo que esta maravillosa región tiene para ofrecer?
+    </p>
+    <div class="btn-group">
+      <button class="btn btn-primary">Conoce más</button>
+      <button class="btn btn-secondary">Reserva ahora</button>
+    </div>
+  </div>
+</section>
 
-          <h2 class="h1 hero-title">Journey to explore world</h2>
 
-          <p class="hero-text">
-            Ac mi duis mollis. Sapiente? Scelerisque quae, penatibus? Suscipit class corporis nostra rem quos
-            voluptatibus habitant?
-            Fames, vivamus minim nemo enim, gravida lobortis quasi, eum.
-          </p>
-
-          <div class="btn-group">
-            <button class="btn btn-primary">Learn more</button>
-
-            <button class="btn btn-secondary">Book now</button>
-          </div>
-
-        </div>
-      </section>
 
 
 
@@ -283,7 +245,8 @@
               <div class="popular-card">
 
                 <figure class="card-img">
-                  <img src="./assets/images/popular-3.jpg" alt="Kyoto temple, japan" loading="lazy">
+                <img src="{{ asset('img/popular-3.jpg') }}" alt="Descripción de la imagen" loading="lazy">
+
                 </figure>
 
                 <div class="card-content">
