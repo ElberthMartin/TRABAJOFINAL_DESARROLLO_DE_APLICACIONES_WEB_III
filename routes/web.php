@@ -25,3 +25,4 @@ Route::get('/admin', function () {
 Route::get('/reserva', function () {
     return view('reserva');
 });
+
