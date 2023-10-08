@@ -99,7 +99,9 @@
     </p>
     <div class="btn-group">
       <button class="btn btn-primary">Conoce más</button>
-      <button class="btn btn-secondary">Reserva ahora</button>
+      <a href="/reserva" class="btn btn-secondary">Reserva ahora</a>
+
+    
     </div>
   </div>
 </section>
@@ -171,7 +173,7 @@
         <div class="popular-card">
 
           <figure class="card-img">
-            <img src="{{ asset('img/huanuco-cueva-lechuzas.jpg') }}" alt="Cueva de las Lechuzas, Huánuco" loading="lazy">
+            <img src="{{ asset('img/cueva.jpg') }}" alt="Cueva de las Lechuzas, Huánuco" loading="lazy">
           </figure>
 
           <div class="card-content">
@@ -206,7 +208,7 @@
         <div class="popular-card">
 
           <figure class="card-img">
-            <img src="{{ asset('img/huanuco-corona-inca.jpg') }}" alt="Corona del Inca, Huánuco" loading="lazy">
+            <img src="{{ asset('img/corona.jpg') }}" alt="Corona del Inca, Huánuco" loading="lazy">
           </figure>
 
           <div class="card-content">
@@ -251,470 +253,387 @@
       <!-- 
         - #PACKAGE
       -->
-
       <section class="package" id="package">
-        <div class="container">
+  <div class="container">
 
-          <p class="section-subtitle">Popular Packeges</p>
+    <p class="section-subtitle">Lugares Turísticos en Huánuco, Perú</p>
 
-          <h2 class="h2 section-title">Checkout Our Packeges</h2>
+    <h2 class="h2 section-title">Descubre Nuestros Destinos</h2>
 
-          <p class="section-text">
-            Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque laudantium.
-            Sit ornare
-            mollitia tenetur, aptent.
-          </p>
+    <p class="section-text">
+      Huánuco, Perú te espera con sus hermosos lugares turísticos y experiencias únicas. ¡No te lo puedes perder!
+    </p>
 
-          <ul class="package-list">
+    <ul class="package-list">
 
-            <li>
-              <div class="package-card">
+      <li>
+        <div class="package-card">
 
-                <figure class="card-banner">
-                  <img src="./assets/images/packege-1.jpg" alt="Experience The Great Holiday On Beach" loading="lazy">
-                </figure>
+          <figure class="card-banner">
+            <img src="{{ asset('img/pampa.jpg') }}" alt="Hco Pampa en Huánuco, Perú" loading="lazy">
+          </figure>
 
-                <div class="card-content">
+          <div class="card-content">
 
-                  <h3 class="h3 card-title">Experience The Great Holiday On Beach</h3>
+            <h3 class="h3 card-title">Hco Pampa en Huánuco, Perú</h3>
 
-                  <p class="card-text">
-                    Laoreet, voluptatum nihil dolor esse quaerat mattis explicabo maiores, est aliquet porttitor! Eaque,
-                    cras, aspernatur.
-                  </p>
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="time"></ion-icon>
-
-                        <p class="text">7D/6N</p>
-                      </div>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="people"></ion-icon>
-
-                        <p class="text">pax: 10</p>
-                      </div>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="location"></ion-icon>
-
-                        <p class="text">Malaysia</p>
-                      </div>
-                    </li>
-
-                  </ul>
-
-                </div>
-
-                <div class="card-price">
-
-                  <div class="wrapper">
-
-                    <p class="reviews">(25 reviews)</p>
-
-                    <div class="card-rating">
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                    </div>
-
-                  </div>
-
-                  <p class="price">
-                    $750
-                    <span>/ per person</span>
-                  </p>
-
-                  <button class="btn btn-secondary">Book Now</button>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="package-card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/packege-2.jpg" alt="Summer Holiday To The Oxolotan River" loading="lazy">
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3 card-title">Summer Holiday To The Oxolotan River</h3>
-
-                  <p class="card-text">
-                    Laoreet, voluptatum nihil dolor esse quaerat mattis explicabo maiores, est aliquet porttitor! Eaque,
-                    cras, aspernatur.
-                  </p>
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="time"></ion-icon>
-
-                        <p class="text">7D/6N</p>
-                      </div>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="people"></ion-icon>
-
-                        <p class="text">pax: 10</p>
-                      </div>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="location"></ion-icon>
-
-                        <p class="text">Malaysia</p>
-                      </div>
-                    </li>
-
-                  </ul>
-
-                </div>
-
-                <div class="card-price">
-
-                  <div class="wrapper">
-
-                    <p class="reviews">(20 reviews)</p>
-
-                    <div class="card-rating">
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                    </div>
-
-                  </div>
-
-                  <p class="price">
-                    $520
-                    <span>/ per person</span>
-                  </p>
-
-                  <button class="btn btn-secondary">Book Now</button>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="package-card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/packege-3.jpg" alt="Santorini Island's Weekend Vacation" loading="lazy">
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3 card-title">Santorini Island's Weekend Vacation</h3>
-
-                  <p class="card-text">
-                    Laoreet, voluptatum nihil dolor esse quaerat mattis explicabo maiores, est aliquet porttitor! Eaque,
-                    cras, aspernatur.
-                  </p>
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="time"></ion-icon>
-
-                        <p class="text">7D/6N</p>
-                      </div>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="people"></ion-icon>
-
-                        <p class="text">pax: 10</p>
-                      </div>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="location"></ion-icon>
-
-                        <p class="text">Malaysia</p>
-                      </div>
-                    </li>
-
-                  </ul>
-
-                </div>
-
-                <div class="card-price">
-
-                  <div class="wrapper">
-
-                    <p class="reviews">(40 reviews)</p>
-
-                    <div class="card-rating">
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                    </div>
-
-                  </div>
-
-                  <p class="price">
-                    $660
-                    <span>/ per person</span>
-                  </p>
-
-                  <button class="btn btn-secondary">Book Now</button>
-
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-          <button class="btn btn-primary">View All Packages</button>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #GALLERY
-      -->
-
-      <section class="gallery" id="gallery">
-        <div class="container">
-
-          <p class="section-subtitle">Photo Gallery</p>
-
-          <h2 class="h2 section-title">Photo's From Travellers</h2>
-
-          <p class="section-text">
-            Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque laudantium.
-            Sit ornare
-            mollitia tenetur, aptent.
-          </p>
-
-          <ul class="gallery-list">
-
-            <li class="gallery-item">
-              <figure class="gallery-image">
-                <img src="./assets/images/gallery-1.jpg" alt="Gallery image">
-              </figure>
-            </li>
-
-            <li class="gallery-item">
-              <figure class="gallery-image">
-                <img src="./assets/images/gallery-2.jpg" alt="Gallery image">
-              </figure>
-            </li>
-
-            <li class="gallery-item">
-              <figure class="gallery-image">
-                <img src="./assets/images/gallery-3.jpg" alt="Gallery image">
-              </figure>
-            </li>
-
-            <li class="gallery-item">
-              <figure class="gallery-image">
-                <img src="./assets/images/gallery-4.jpg" alt="Gallery image">
-              </figure>
-            </li>
-
-            <li class="gallery-item">
-              <figure class="gallery-image">
-                <img src="./assets/images/gallery-5.jpg" alt="Gallery image">
-              </figure>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #CTA
-      -->
-
-      <section class="cta" id="contact">
-        <div class="container">
-
-          <div class="cta-content">
-            <p class="section-subtitle">Call To Action</p>
-
-            <h2 class="h2 section-title">Ready For Unforgatable Travel. Remember Us!</h2>
-
-            <p class="section-text">
-              Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque
-              laudantium. Sit ornare
-              mollitia tenetur, aptent.
+            <p class="card-text">
+              Descubre la belleza de Hco Pampa en Huánuco, Perú y todas sus comodidades. ¡No te lo pierdas!
             </p>
+
+            <ul class="card-meta-list">
+
+              <li class="card-meta-item">
+                <div class="meta-box">
+                  <ion-icon name="time"></ion-icon>
+
+                  <p class="text">7D/6N</p>
+                </div>
+              </li>
+
+              <li class="card-meta-item">
+                <div class="meta-box">
+                  <ion-icon name="people"></ion-icon>
+
+                  <p class="text">pax: 10</p>
+                </div>
+              </li>
+
+              <li class="card-meta-item">
+                <div class="meta-box">
+                  <ion-icon name="location"></ion-icon>
+
+                  <p class="text">Huánuco, Perú</p>
+                </div>
+              </li>
+
+            </ul>
+
           </div>
 
-          <button class="btn btn-secondary">Contact Us !</button>
+          <div class="card-price">
+
+            <div class="wrapper">
+
+              <p class="reviews"></p>
+
+              <div class="card-rating">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+
+            </div>
+
+            <p class="price">
+              S/75.00
+              <span>/ por persona</span>
+            </p>
+
+            <a href="/reserva" class="btn btn-secondary">Reservar Ahora</a>
+
+          </div>
 
         </div>
-      </section>
+      </li>
 
-    </article>
-  </main>
+      <li>
+        <div class="package-card">
 
+          <figure class="card-banner">
+            <img src="{{ asset('img/huallaga.jpg') }}" alt="Río Huallaga en Huánuco, Perú" loading="lazy">
+          </figure>
 
+          <div class="card-content">
 
+            <h3 class="h3 card-title">Río Huallaga en Huánuco, Perú</h3>
 
+            <p class="card-text">
+              Vive unas vacaciones inolvidables en el Río Huallaga en Huánuco, Perú.
+            </p>
 
-  <!-- 
-    - #FOOTER
-  -->
+            <ul class="card-meta-list">
 
-  <footer class="footer">
+              <li class="card-meta-item">
+                <div class="meta-box">
+                  <ion-icon name="time"></ion-icon>
 
-    <div class="footer-top">
-      <div class="container">
+                  <p class="text">7D/6N</p>
+                </div>
+              </li>
 
-        <div class="footer-brand">
+              <li class="card-meta-item">
+                <div class="meta-box">
+                  <ion-icon name="people"></ion-icon>
 
-          <a href="#" class="logo">
-            <img src="./assets/images/logo.svg" alt="Tourly logo">
-          </a>
+                  <p class="text">pax: 10</p>
+                </div>
+              </li>
 
-          <p class="footer-text">
-            Urna ratione ante harum provident, eleifend, vulputate molestiae proin fringilla, praesentium magna conubia
-            at
-            perferendis, pretium, aenean aut ultrices.
-          </p>
+              <li class="card-meta-item">
+                <div class="meta-box">
+                  <ion-icon name="location"></ion-icon>
 
-        </div>
+                  <p class="text">Huánuco, Perú</p>
+                </div>
+              </li>
 
-        <div class="footer-contact">
+            </ul>
 
-          <h4 class="contact-title">Contact Us</h4>
+          </div>
 
-          <p class="contact-text">
-            Feel free to contact and reach us !!
-          </p>
+          <div class="card-price">
 
-          <ul>
+            <div class="wrapper">
 
-            <li class="contact-item">
-              <ion-icon name="call-outline"></ion-icon>
+              <p class="reviews"></p>
 
-              <a href="tel:+01123456790" class="contact-link">+01 (123) 4567 90</a>
-            </li>
+              <div class="card-rating">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
 
-            <li class="contact-item">
-              <ion-icon name="mail-outline"></ion-icon>
+            </div>
 
-              <a href="mailto:info.tourly.com" class="contact-link">info.tourly.com</a>
-            </li>
+            <p class="price">
+              S/52.00
+              <span>/ por persona</span>
+            </p>
 
-            <li class="contact-item">
-              <ion-icon name="location-outline"></ion-icon>
+            <a href="/reserva" class="btn btn-secondary">Reservar Ahora</a>
 
-              <address>3146 Koontz, California</address>
-            </li>
-
-          </ul>
-
-        </div>
-
-        <div class="footer-form">
-
-          <p class="form-text">
-            Subscribe our newsletter for more update & news !!
-          </p>
-
-          <form action="" class="form-wrapper">
-            <input type="email" name="email" class="input-field" placeholder="Enter Your Email" required>
-
-            <button type="submit" class="btn btn-secondary">Subscribe</button>
-          </form>
+          </div>
 
         </div>
+      </li>
 
-      </div>
+      <li>
+        <div class="package-card">
+
+          <figure class="card-banner">
+            <img src="{{ asset('img/milagros.jpg') }}" alt="Laguna de los Milagros en Huánuco, Perú" loading="lazy">
+          </figure>
+
+          <div class="card-content">
+
+            <h3 class="h3 card-title">Laguna de los Milagros en Huánuco, Perú</h3>
+
+            <p class="card-text">
+              Disfruta de un fin de semana inolvidable en la hermosa Laguna de los Milagros en Huánuco, Perú.
+            </p>
+
+            <ul class="card-meta-list">
+
+              <li class="card-meta-item">
+                <div class="meta-box">
+                  <ion-icon name="time"></ion-icon>
+
+                  <p class="text">7D/6N</p>
+                </div>
+              </li>
+
+              <li class="card-meta-item">
+                <div class="meta-box">
+                  <ion-icon name="people"></ion-icon>
+
+                  <p class="text">pax: 10</p>
+                </div>
+              </li>
+
+              <li class="card-meta-item">
+                <div class="meta-box">
+                  <ion-icon name="location"></ion-icon>
+
+                  <p class="text">Huánuco, Perú</p>
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <div class="card-price">
+
+            <div class="wrapper">
+
+              <p class="reviews"></p>
+
+              <div class="card-rating">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+
+            </div>
+
+            <p class="price">
+              S/.95.00
+              <span>/ por persona</span>
+            </p>
+
+            <a href="/reserva" class="btn btn-secondary">Reservar Ahora</a>
+
+          </div>
+
+        </div>
+      </li>
+
+    </ul>
+
+    <button class="btn btn-primary">Ver Todos los Destinos</button>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- 
+- #CTA
+-->
+
+<section class="cta" id="contact">
+  <div class="container">
+
+    <div class="cta-content">
+      <p class="section-subtitle">Llamado a la Acción</p>
+
+      <h2 class="h2 section-title">Listo Para un Viaje Inolvidable. ¡Recuérdanos!</h2>
+
+      <p class="section-text">
+        Huánuco te espera con los brazos abiertos. No te pierdas la oportunidad de vivir experiencias únicas y emocionantes.
+      </p>
     </div>
 
-    <div class="footer-bottom">
-      <div class="container">
+    <a href="https://wa.me/TUNUMERODEWHATSAPP" class="btn btn-secondary">¡Contáctanos!</a>
 
-        <p class="copyright">
-          &copy; 2022 <a href="">codewithsadee</a>. All rights reserved
-        </p>
+  </div>
+</section>
 
-        <ul class="footer-bottom-list">
+</article>
+</main>
 
-          <li>
-            <a href="#" class="footer-bottom-link">Privacy Policy</a>
-          </li>
+<!-- 
+- #FOOTER
+-->
 
-          <li>
-            <a href="#" class="footer-bottom-link">Term & Condition</a>
-          </li>
+<footer class="footer">
 
-          <li>
-            <a href="#" class="footer-bottom-link">FAQ</a>
-          </li>
+<div class="footer-top">
+  <div class="container">
 
-        </ul>
+    <div class="footer-brand">
 
-      </div>
+      <a href="#" class="logo">
+        <img src="{{ asset('img/logo.svg') }}" alt="Logo de Tourly">
+      </a>
+
+      <p class="footer-text">
+        Descubre Huánuco, disfruta de su cultura y naturaleza. Te ayudamos a planificar tus próximas aventuras.
+      </p>
+
     </div>
 
-  </footer>
+    <div class="footer-contact">
 
+      <h4 class="contact-title">Contáctanos</h4>
 
+      <p class="contact-text">
+        ¡No dudes en ponerte en contacto con nosotros!
+      </p>
 
+      <ul>
 
+        <li class="contact-item">
+          <ion-icon name="call-outline"></ion-icon>
 
-  <!-- 
-    - #GO TO TOP
-  -->
+          <a href="tel:123456790" class="contact-link">+34543545</a>
+        </li>
 
-  <a href="#top" class="go-top" data-go-top>
-    <ion-icon name="chevron-up-outline"></ion-icon>
-  </a>
+        <li class="contact-item">
+          <ion-icon name="mail-outline"></ion-icon>
 
+          <a href="mailto:info.tourly.com" class="contact-link">info.tourly.com</a>
+        </li>
 
+        <li class="contact-item">
+          <ion-icon name="location-outline"></ion-icon>
 
+          <address>Huanuco</address>
+        </li>
 
+      </ul>
 
-  <!-- 
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
+    </div>
 
-  <!-- 
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <div class="footer-form">
+
+      
+
+    </div>
+
+  </div>
+</div>
+
+<div class="footer-bottom">
+  <div class="container">
+
+    <p class="copyright">
+      &copy; 2022 <a href=""></a>. Todos los derechos reservados
+    </p>
+
+    <ul class="footer-bottom-list">
+
+      <li>
+        <a href="#" class="footer-bottom-link">Política de Privacidad</a>
+      </li>
+
+      <li>
+        <a href="#" class="footer-bottom-link">Términos y Condiciones</a>
+      </li>
+
+      <li>
+        <a href="#" class="footer-bottom-link">Preguntas Frecuentes</a>
+      </li>
+
+    </ul>
+
+  </div>
+</div>
+
+</footer>
+
+<!-- 
+- #GO TO TOP
+-->
+
+<a href="#top" class="go-top" data-go-top>
+<ion-icon name="chevron-up-outline"></ion-icon>
+</a>
+
+<!-- 
+- Enlace a JavaScript personalizado
+-->
+<script src="{{ asset('js/script.js') }}"></script>
+
+<!-- 
+- Enlace a Ionicons
+-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 

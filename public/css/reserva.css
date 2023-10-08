@@ -1,82 +1,77 @@
-:root {
-  --color-dark: #15181f;
-  --color-dark-x: #2d343f;
-  --color-dark-xx: #1f232b;
-  --color-light: #ffffff;
-  --color-grey: #f5f6f8;
-}
-
+/* Estilo para el cuerpo del formulario */
 body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.1rem;
-  font-weight: 300;
-  background-color: var(--color-grey);
-  color: var(--color-light);
-  letter-spacing: .05rem;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0; /* Cambia el color de fondo según tus preferencias */
 }
 
-.bg-light {
-  background-color: var(--color-light)!important;
+/* Estilo para el encabezado (h1) */
+h1 {
+  text-align: center;
+  color: #333; /* Cambia el color del encabezado según tus preferencias */
+  margin-top: 20px;
 }
 
-.bg-dark {
-  background-color: var(--color-dark)!important;
+/* Estilo para el formulario */
+form {
+  background-color: #fff; /* Fondo blanco */
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor del formulario */
 }
 
-.p-6 {
-  padding: 4rem 7rem;
+/* Estilo para las etiquetas */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
-.contact-box {
-  padding: 3rem;
+/* Estilo para los campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-.btn {
-  font-weight: 400;
-  padding: 1rem 2rem;
-  border-radius: 5rem;
-  min-width: 10rem;
+/* Estilo para el botón de envío */
+input[type="submit"] {
+  background-color: #007bff; /* Cambia el color del botón según tus preferencias */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.btn-outline-dark {
-  border: 2px solid var(--color-dark-xx);
+/* Estilo para el botón de envío cuando se pasa el cursor sobre él */
+input[type="submit"]:hover {
+  background-color: #0056b3; /* Cambia el color al pasar el cursor sobre el botón */
 }
 
-
-.form-control {
-  background-color: var(--color-dark-xx);
-  border: 2px solid var(--color-dark-xx);
-  border-radius: .2rem;
-  padding: 1.5rem 1rem;
-}
-
-.register-bg {
-  background-image: url('images/hero.jpg');
+/* Estilo para el fondo del formulario */
+body {
+  background-image: url('ruta/a/tu/imagen.jpg'); /* Cambia la ruta a tu imagen de fondo */
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  background-attachment: fixed;
 }
-
-.testiomonial {
-  bottom: 10px
-}
-
-@media (max-width: 575.98px) {
-  .p-6 {
-      padding: 2rem;
-  }
-
-  .contact-box {
-      padding: 0;
-  }
-
-  .width-100 {
-      width: 100%;
-  }
-}
-
-@media (max-width: 1200px) { 
-  .register-bg {
-      min-height: 50vh;
-  }
+/* Estilo para los campos de entrada más pequeños */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 5px; /* Reducir el espacio interior */
+    margin-bottom: 2px; /* Reducir el espacio inferior */
+    border: 1px solid #ccc;
+    border-radius: 7px;
 }

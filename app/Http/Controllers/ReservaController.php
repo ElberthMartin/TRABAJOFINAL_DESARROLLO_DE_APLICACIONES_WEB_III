@@ -37,6 +37,7 @@ class ReservaController extends Controller
         ]);
     
         $reserva->save();
+        return view('reserva')->with('success', 'Registro exitoso, gracias');
     
     
     }
