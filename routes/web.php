@@ -7,8 +7,7 @@ Route::get('/reserva', [ReservaController::class, 'create'])->name('reserva.crea
 Route::post('/reserva', [ReservaController::class, 'store'])->name('reserva.store');
 
 
-
-/*
+/*no tocar
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
@@ -19,17 +18,25 @@ Route::post('/reserva', [ReservaController::class, 'store'])->name('reserva.stor
 |
 */
 
-
 Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/admin', function () {
-    return view('admin');
-})->name('admin') ;
-
 Route::get('/reserva', function () {
     return view('reserva');
 });
+Route::get('/login', function () {
+    return view('login');
+});
 
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+/*..............*/
+
+Route::get('/login', 'App\Http\Controllers\AuthController@showLoginForm')->name('login');
+Route::post('/login', 'App\Http\Controllers\AuthController@login');
+Route::post('/logout', 'App\Http\Controllers\AuthController@logout')->name('logout');
+Route::get('/register', 'App\Http\Controllers\AuthController@showRegistrationForm')->name('register');
+Route::post('/register', 'App\Http\Controllers\AuthController@register');
 
