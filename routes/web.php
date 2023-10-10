@@ -40,3 +40,8 @@ Route::post('/logout', 'App\Http\Controllers\AuthController@logout')->name('logo
 Route::get('/register', 'App\Http\Controllers\AuthController@showRegistrationForm')->name('register');
 Route::post('/register', 'App\Http\Controllers\AuthController@register');
 
+Route::get('/muestra', function () {
+    return view('muestra');
+});
+/* todo ok */
+Route::get('/mostrar-tabla', 'ReservaController@mostrarTabla');
